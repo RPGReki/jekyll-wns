@@ -1,5 +1,5 @@
 class Quads
-  MAIN_EXPRESSION = /([\.!?‽”“…])\n(?![\n\-\/]|http|>\n)/
+  MAIN_EXPRESSION = /([\.!?‽”“…])(\r|)\n(?![\n\-\/]|http|>\n)/
   MAIN_REPLACEMENT = "\\1&ensp;"
   CLEANUP_EXPRESSION = /&ensp;( |> )*/
   CLEANUP_REPLACEMENT = "&ensp;"
