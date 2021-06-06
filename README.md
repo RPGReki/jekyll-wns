@@ -101,9 +101,9 @@ wns:
 
 ```html
 … tools, e.g., hammer,…
-̀ ``
+```
 
-With `abbreviations: true`
+With `abbreviations: true`:
 
 ```html
 … tools,&nbsp;e.&#8239;\g.,&nbsp;hammer,…
