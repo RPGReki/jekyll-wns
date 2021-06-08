@@ -5,12 +5,12 @@ module WNS
     CLEANUP_EXPRESSION = /, ([a-zA-Z]\.&)/
     CLEANUP_REPLACEMENT = ",&nbsp;\\1"
 
-    def enabled?(doc)
+    def self.enabled?(doc)
       wns = doc.site.config["wns"] || {}
       wns["abbreviations"] || false
     end
 
-    def replace_abbreviations!(doc)
+    def self.replace_abbreviations!(doc)
       if Abbreviations::enabled?(doc)
         doc.content = doc.content.gsub(Abbreviations::MAIN_EXPRESSION, Abbreviations::MAIN_REPLACEMENT)
         doc.content = doc.content.gsub(Abbreviations::CLEANUP_EXPRESSION, Abbreviations::CLEANUP_REPLACEMENT)
