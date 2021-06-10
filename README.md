@@ -76,6 +76,19 @@ gems:
 <p style="text-align:center" data-mce-style="text-align:center">🙿🙾🙿🙾🙿🙾🙿🙾
 ```
 
+#### YouTube Embed
+
+The following snippet should be integrated into your site for the tag to properly work:
+
+```javascript
+function loadYouTube() {
+  var videos = d.getElementsByClassName('youtube');
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].innerHTML = d.getElementById(videos[i].getAttribute('data-videoid')).innerHTML;
+  }
+}
+```
+
 ### Hooks
 
 #### Automatic replacement of spaces to en quads after each sentence
