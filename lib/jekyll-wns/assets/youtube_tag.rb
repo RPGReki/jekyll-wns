@@ -2,7 +2,7 @@ module WNS
   class YoutubeTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
-      @text = text.strip!.split(" ")
+      @text = text.strip!.split("|")
     end
 
     def render(context)
