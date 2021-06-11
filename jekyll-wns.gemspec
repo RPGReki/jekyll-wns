@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-wns"
-  spec.version       = "3.3.1"
+  spec.version       = "3.4.0"
   spec.authors       = ["Thai Chung"]
   spec.email         = ["mail@0xReki.de"]
   spec.summary       = "Collection of Filters, Tags and Hooks I use."

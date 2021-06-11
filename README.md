@@ -4,11 +4,11 @@ A collection of filters, tags and hooks that I use on my pages.
 
 ## Installation
 
-1. Add `gem "jekyll-wns", git: "https://github.com/0xReki/jekyll-wns.git, branch: "main"` to your site's Gemfile and run `bundle`
+1. Run ̀ bundle add jekyll-wns` and
 2. Add the following to your site's `_config.yml`:
 
 ```yml
-gems:
+plugins:
   - jekyll-wns
 ```
 
@@ -74,6 +74,24 @@ gems:
 
 ```html
 <p style="text-align:center" data-mce-style="text-align:center">🙿🙾🙿🙾🙿🙾🙿🙾
+```
+
+#### Ruby Annotations
+
+```liquid
+{% ruby b|t %}
+
+{% ruby a#b|t#s %}
+
+{% ruby a#b#c|x#y#z %}
+```
+
+```html
+<p><ruby><span class="rb first last" aria-hidden="true">b</span><rp>(</rp><rt first="" last="">t</rt><rp>)</rp></ruby></p>
+
+<p><ruby><span class="rb first" aria-hidden="true">a</span><rp>(</rp><rt first="">t</rt><rp>)</rp><span class="rb last" aria-hidden="true">b</span><rp>(</rp><rt last="">s</rt><rp>)</rp></ruby></p>
+
+<p><ruby><span class="rb first" aria-hidden="true">a</span><rp>(</rp><rt first="">x</rt><rp>)</rp><span class="rb" aria-hidden="true">b</span><rp>(</rp><rt>y</rt><rp>)</rp><span class="rb last" aria-hidden="true">c</span><rp>(</rp><rt last="">z</rt><rp>)</rp></ruby></p>
 ```
 
 #### YouTube Embed
