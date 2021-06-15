@@ -16,7 +16,9 @@ module WNS
     end
     
     def self.insert_quads_into_document!(doc)
-      doc.content = insert_quads doc.content
+      if Quads::enabled?(doc)
+        doc.content = insert_quads doc.content
+      end
     end
   end
 end
