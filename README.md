@@ -164,3 +164,22 @@ With `abbreviations: true`:
 ```html
 … tools,&nbsp;e.&#8239;\g.,&nbsp;hammer,…
 ```
+
+### Automatic labelling of Unicode Characters
+
+Some assistive technologies don't play nice with Unicode character, this should improve thing by adding aria-labels spans to wherever necessary.
+
+To enable this, add this to your `_config.yml`:
+
+```yml
+wns:
+  label_unicode: true
+```
+
+```markdown
+Hyda-Ⅳ
+```
+
+```html
+Hyda-<span aria-label="4">Ⅳ</span>
+```
