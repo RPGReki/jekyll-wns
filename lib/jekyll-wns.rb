@@ -6,7 +6,7 @@ require_relative 'jekyll-wns/assets/label_unicode'
 require_relative 'jekyll-wns/assets/quads'
 
 require_relative 'jekyll-wns/assets/digest_filters'
-require_relative 'jekyll-wns/assets/file_properties_filter'
+require_relative 'jekyll-wns/assets/file_property_filters'
 require_relative 'jekyll-wns/assets/quads_filter'
 
 require_relative 'jekyll-wns/assets/ruby_tag'
