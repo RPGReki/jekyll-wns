@@ -5,7 +5,7 @@ module WNS
     def file_size(path)
       source = Jekyll.configuration({})['source']
       
-      unless source.blank?
+      unless source.empty?
         source += '/'
       else 
         source = ''
@@ -20,9 +20,9 @@ module WNS
     end
     
     def mp3_duration(path)
-      source = Jekyll.configuration({})['source']
+      source = Jekyll.configuration({})['source'] || ''
       
-      unless source.blank?
+      unless source.empty?
         source += '/'
       else 
         source = ''
