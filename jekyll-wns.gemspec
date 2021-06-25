@@ -10,4 +10,6 @@ Gem::Specification.new do |spec|
   spec.licenses      = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
+
+  spec.add_dependency("ruby-mp3info", "~> 0.8.10")
 end
