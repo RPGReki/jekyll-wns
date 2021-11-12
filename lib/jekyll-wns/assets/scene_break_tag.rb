@@ -9,13 +9,13 @@ module WNS
     def render(context)
       case @text
       when "leaves"
-        '<p style="text-align:center" data-mce-style="text-align:center" role="presentation>🙐 🙑 🙓 🙒 🙐 🙑 🙓 🙒 🙐 🙑 🙓 🙒</p>'
+        '<p style="text-align:center" data-mce-style="text-align:center" aria-hidden="true">🙐 🙑 🙓 🙒 🙐 🙑 🙓 🙒 🙐 🙑 🙓 🙒</p>'
       when "wave"
-        '<p style="text-align:center;letter-spacing:-.13em" data-mce-style="text-align:center;letter-spacing:-.13em" role="presentation>◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠</p>'
+        '<p style="text-align:center;letter-spacing:-.13em" data-mce-style="text-align:center;letter-spacing:-.13em" aria-hidden="true">◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠</p>'
       when "wall"
-        '<p style="text-align:center;letter-spacing:-.2em" data-mce-style="text-align:center;letter-spacing:-.2em" role="presentation>⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍</p>'
+        '<p style="text-align:center;letter-spacing:-.2em" data-mce-style="text-align:center;letter-spacing:-.2em" aria-hidden="true">⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍⚎⚍</p>'
       else
-        '<p style="text-align:center" data-mce-style="text-align:center" role="presentation>🙿🙾🙿🙾🙿🙾🙿🙾🙿🙾🙿🙾🙿🙾🙿</p>'
+        '<p style="text-align:center" data-mce-style="text-align:center" aria-hidden="true">🙿🙾🙿🙾🙿🙾🙿🙾🙿🙾🙿🙾🙿🙾🙿</p>'
       end
     end 
   end
