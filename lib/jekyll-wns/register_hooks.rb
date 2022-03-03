@@ -20,5 +20,5 @@ Jekyll::Hooks.register :posts, :pre_render do |document|
 end
 
 Jekyll::Hooks.register :posts, :post_render do |document|
-  WNS::LabelPronounciation::label_pronounciation document
+  WNS::LabelPronounciation::label_pronounciation! document
 end
