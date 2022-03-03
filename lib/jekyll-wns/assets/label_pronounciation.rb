@@ -7,8 +7,8 @@ module WNS
       labels.length > 0
     end
 
-    def self.label_unicode!(doc)
-      if LabelUnicode::enabled?(doc)
+    def self.label_pronounciation!(doc)
+      if LabelPronounciation::enabled?(doc)
         wns = doc.site.config["wns"] || {}
         labels = wns["label_pronounciation"] || false
         for i in (0..(labels.length()) - 1) do
