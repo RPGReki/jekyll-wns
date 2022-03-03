@@ -12,7 +12,7 @@ module WNS
         wns = doc.site.config["wns"] || {}
         labels = wns["label_pronounciation"] || false
         for i in (0..(labels.length()) - 1) do
-          doc.content = doc.content.gsub(Regexp.new("\b#{labels[i].term}\b"), "<span aria-label='#{labels[i].pronounciation}'>\\1</span>")
+          doc.content = doc.content.gsub(Regexp.new("\b#{labels[i]["term"]}\b"), "<span aria-label='#{labels[i]["pronounciation"]}'>\\1</span>")
         end
       end
     end
