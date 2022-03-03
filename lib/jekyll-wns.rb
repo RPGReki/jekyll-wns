@@ -3,6 +3,7 @@ require 'jekyll'
 
 require_relative 'jekyll-wns/assets/abbreviations'
 require_relative 'jekyll-wns/assets/label_unicode'
+require_relative 'jekyll-wns/assets/label_pronounciation'
 require_relative 'jekyll-wns/assets/quads'
 
 require_relative 'jekyll-wns/assets/digest_filters'
