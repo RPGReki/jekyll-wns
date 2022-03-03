@@ -11,7 +11,7 @@ module WNS
     def self.label_unicode!(doc)
       if LabelUnicode::enabled?(doc)
         for i in (0..(LabelUnicode::SYMBOLS.length()) - 1) do
-          doc.content = doc.content.gsub(Regexp.new("([\\-A-Za-z0-9]*|)#{LabelUnicode::SYMBOLS[i].source}([\\-A-Za-z0-9]*|)"), "<span aria-label='\\1#{LabelUnicode::READINGS[i]}\\3'>\\1\\2\\3</span>")
+          doc.content = doc.content.gsub(Regexp.new("(\\S*)#{LabelUnicode::SYMBOLS[i].source}(\\S*)"), "<span aria-label='\\1#{LabelUnicode::READINGS[i]}\\3'>\\1\\2\\3</span>")
         end
       end
     end
