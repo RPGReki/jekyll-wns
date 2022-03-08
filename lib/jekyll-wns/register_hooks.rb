@@ -9,7 +9,7 @@ end
 
 Jekyll::Hooks.register :pages, :post_render do |document|
   if document.path =~ /(.md|.html)/
-    WNS::LabelPronounciation::label_pronounciation document
+    WNS::LabelPronounciation::label_pronounciation! document
   end
 end
 
