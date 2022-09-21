@@ -8,6 +8,8 @@ module WNS
 
     def render(context)
       case @text
+      when "ice"
+        '<p style="text-align:center" data-mce-style="text-align:center" aria-hidden="true">❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆ ❄ ❅ ❆</p>'
       when "leaves"
         '<p style="text-align:center" data-mce-style="text-align:center" aria-hidden="true">🙐 🙑 🙓 🙒 🙐 🙑 🙓 🙒 🙐 🙑 🙓 🙒</p>'
       when "wave"
